@@ -11,10 +11,6 @@
 number_lucky_ticket=(input('Введите номер билета-'))
 def is_lucky_ticket(number_lucky_ticket):
     list_lucky_ticket=(list(map(int,number_lucky_ticket)))
-    if len(list_lucky_ticket)%2==0:
-        if sum(list_lucky_ticket[0:int(len(list_lucky_ticket)/2)])==sum(list_lucky_ticket[int(len(list_lucky_ticket) / 2):]):
-            print('TRUE')
-        else:print("FALSE")
-    else:print('NO')
-
+    lucky_ticket=bool(sum(list_lucky_ticket[0:int(len(list_lucky_ticket)/2)])==sum(list_lucky_ticket[int(len(list_lucky_ticket) / 2):]))
+    return (list_lucky_ticket)
 is_lucky_ticket(number_lucky_ticket)
